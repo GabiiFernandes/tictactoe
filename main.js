@@ -33,7 +33,6 @@ btn.addEventListener("click", function() {
 function handleClick (element){
     //verifica classe
     const cell = element.target;
-    console.log(cell)
     const classToAdd = circleTime ? 'o' : 'x';
 
     countCells = 0
@@ -59,7 +58,6 @@ function checkDraw() {
     tiles.forEach((tile) => {
         if (tile.classList.contains('o') || tile.classList.contains('x')) {
             countCells ++;
-            console.log(tile.classList)
         }
     })
     if (countCells == 9) {
@@ -67,5 +65,4 @@ function checkDraw() {
     } else {
         return false;
     }
-
 }
